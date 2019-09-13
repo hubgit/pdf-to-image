@@ -1,0 +1,33 @@
+<!doctype html>
+<meta charset="utf8">
+<title>pdf-to-image</title>
+
+<style>
+  body { font-family: Lato, Helvetica, sans-serif }
+  div { margin: 16px }
+</style>
+
+<form action="convert">
+  <div>
+    <label>PDF URL <input type="url" name="url" size="100" placeholder="https://…"></label>
+  </div>
+
+  <div>
+    <label>Page <input type="number" name="pageNumber" value="1" step="1"></label>
+  </div>
+
+  <div>
+    <label>Scale <input type="number" name="scale" value="2.0"></label>
+  </div>
+
+  <div>
+    <label>Format <select name="mimeType">
+      <option value="image/jpeg" selected>JPEG</option>
+      <option value="image/png">PNG</option>
+    </select></label>
+  </div>
+
+  <div>
+    <button type="submit">Convert</button>
+  </div>
+</form>
